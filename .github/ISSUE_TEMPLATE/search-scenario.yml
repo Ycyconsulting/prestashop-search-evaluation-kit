@@ -1,0 +1,43 @@
+name: Propose a search scenario
+description: Suggest one vendor-neutral scenario missing from the checklist.
+title: "[scenario] "
+labels:
+  - scenario
+body:
+  - type: markdown
+    attributes:
+      value: Do not post credentials, private store URLs, personal data, production logs, or undisclosed security issues.
+  - type: input
+    id: version
+    attributes:
+      label: PrestaShop major version
+      placeholder: "8 or 9"
+    validations:
+      required: true
+  - type: textarea
+    id: fixture
+    attributes:
+      label: Minimal synthetic fixture
+      description: Describe only synthetic products, attributes, languages, and stock states needed to reproduce the scenario.
+    validations:
+      required: true
+  - type: textarea
+    id: action
+    attributes:
+      label: User action
+      description: Describe one repeatable storefront or operations action.
+    validations:
+      required: true
+  - type: textarea
+    id: observation
+    attributes:
+      label: Expected observation
+      description: State an observable result without making a universal vendor or revenue claim.
+    validations:
+      required: true
+  - type: textarea
+    id: gap
+    attributes:
+      label: Why existing rows do not cover it
+    validations:
+      required: true
