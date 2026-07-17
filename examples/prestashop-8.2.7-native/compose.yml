@@ -1,0 +1,46 @@
+name: neuroplugin-ps8-native-baseline
+
+services:
+  db:
+    image: mariadb:10.11
+    environment:
+      MARIADB_DATABASE: prestashop
+      MARIADB_USER: prestashop
+      MARIADB_PASSWORD: ${NP_BASELINE_DB_PASSWORD:?set NP_BASELINE_DB_PASSWORD}
+      MARIADB_ROOT_PASSWORD: ${NP_BASELINE_DB_ROOT_PASSWORD:?set NP_BASELINE_DB_ROOT_PASSWORD}
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    volumes:
+      - db_data:/var/lib/mysql
+
+  prestashop:
+    image: prestashop/prestashop:8.2.7
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:18080:80"
+    environment:
+      DB_SERVER: db
+      DB_NAME: prestashop
+      DB_USER: prestashop
+      DB_PASSWD: ${NP_BASELINE_DB_PASSWORD:?set NP_BASELINE_DB_PASSWORD}
+      DB_PREFIX: ps_
+      PS_INSTALL_AUTO: "1"
+      PS_DOMAIN: localhost:18080
+      PS_HANDLE_DYNAMIC_DOMAIN: "0"
+      PS_LANGUAGE: en
+      PS_COUNTRY: GB
+      PS_FOLDER_ADMIN: baseline-admin
+      PS_FOLDER_INSTALL: baseline-install
+      ADMIN_MAIL: benchmark@example.invalid
+      ADMIN_PASSWD: ${NP_BASELINE_ADMIN_PASSWORD:?set NP_BASELINE_ADMIN_PASSWORD}
+    volumes:
+      - shop_data:/var/www/html
+
+volumes:
+  db_data:
+  shop_data:

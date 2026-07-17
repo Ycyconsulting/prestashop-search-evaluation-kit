@@ -31,6 +31,12 @@ Official references:
 - [PrestaShop 9 search index command](https://devdocs.prestashop-project.org/9/development/components/console/prestashop-search-index/)
 - [Browsing the front office — PrestaShop 8](https://docs.prestashop-project.org/v.8-documentation/user-guide/browsing-front-office)
 
+## Worked example
+
+The first completed example is a single controlled run against native PrestaShop 8.2.7 search: 15 pass, 1 partial, 0 fail, and 2 not applicable. Its decision is `inconclusive`, because no candidate search change existed to roll back. The partial result records a combination-reference query that opened the default combination rather than the queried one.
+
+[Read the PrestaShop 8.2.7 native-search baseline](examples/prestashop-8.2.7-native/REPORT.md)
+
 ## Minimum fixture
 
 Include at least:
@@ -55,7 +61,7 @@ Always repeat the protocol on the exact shop, theme, catalogue, infrastructure, 
 
 ## Disclosure
 
-This kit does not treat any vendor as the default answer. A completed native-search or third-party worked example has not yet been published; do not interpret the absence of one as comparative proof.
+This kit does not treat any vendor as the default answer. The published native-search example is a baseline, not comparative proof for or against NP Search or any other product.
 
 ## License
 

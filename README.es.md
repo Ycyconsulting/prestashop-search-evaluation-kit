@@ -31,6 +31,12 @@ Referencias oficiales:
 - [Comando de índice de búsqueda — PrestaShop 9](https://devdocs.prestashop-project.org/9/development/components/console/prestashop-search-index/)
 - [Recorrer el front office — PrestaShop 8](https://docs.prestashop-project.org/v.8-documentation/user-guide/browsing-front-office)
 
+## Ejemplo ejecutado
+
+El primer ejemplo completo es una ejecución controlada contra la búsqueda nativa de PrestaShop 8.2.7: 15 `pass`, 1 `partial`, 0 `fail` y 2 `not_applicable`. La decisión es `inconclusive` porque no había un cambio candidato que pudiera revertirse. El resultado parcial documenta una referencia de combinación que abrió la combinación predeterminada en vez de la consultada.
+
+[Leer el baseline de búsqueda nativa de PrestaShop 8.2.7 (en inglés)](examples/prestashop-8.2.7-native/REPORT.md)
+
 ## Fixture mínimo
 
 Incluye al menos:
@@ -55,7 +61,7 @@ Repite siempre el protocolo en la tienda, tema, catálogo, infraestructura y bus
 
 ## Transparencia
 
-El kit no presupone que un proveedor sea la respuesta correcta. Todavía no se ha publicado un ejemplo completo contra la búsqueda nativa o un tercero; no interpretes la ausencia de ejemplos como prueba comparativa.
+El kit no presupone que un proveedor sea la respuesta correcta. El ejemplo publicado de búsqueda nativa es un baseline, no una prueba comparativa a favor o en contra de NP Search ni de otro producto.
 
 ## Licencia
 
