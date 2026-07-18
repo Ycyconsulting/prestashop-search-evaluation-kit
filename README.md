@@ -57,7 +57,7 @@ Include at least:
 
 ## Vendor demo: NP Search only
 
-This link opens our own NP Search 2.13.4 product demo, not a multi-vendor decision tool. The browser-only fixture contains 12 fictional products and lets you change typo recovery, synonyms, stock/category facets, and pin/boost/hide rules, then inspect a simulated decision trace and add-to-cart interaction. It connects to no shop and proves neither latency nor behaviour on your catalogue.
+This link opens our browser-only NP Search decision fixture, not a live package instance or a multi-vendor decision tool. The destination labels the fixture as predecessor 2.13.2 evidence; current 2.13.4 evidence is the separate exact-package report above. The fixture contains 12 fictional products and lets you change typo recovery, synonyms, stock/category facets, and pin/boost/hide rules, then inspect a simulated decision trace and add-to-cart interaction. It connects to no shop and proves neither latency nor behaviour on your catalogue.
 
 [Open our NP Search-only demo fixture](https://neuroplugin.com/prestashop-search-module?utm_source=github&utm_medium=organic-repo&utm_campaign=search-14d-launch&utm_content=en-evaluation-kit#search-decision-lab)
 

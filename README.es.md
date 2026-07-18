@@ -57,7 +57,7 @@ Incluye al menos:
 
 ## Demo de proveedor: solo NP Search
 
-Este enlace abre nuestra propia demo de NP Search 2.13.4, no una herramienta multiproveedor. El fixture funciona solo en el navegador, contiene 12 productos ficticios y permite cambiar tolerancia a errores, sinónimos, facetas de stock/categoría y reglas pin/boost/hide; después muestra una traza simulada y una interacción de añadir al carrito. No conecta ninguna tienda y no demuestra latencia ni comportamiento en tu catálogo.
+Este enlace abre nuestro fixture de decisión de NP Search en el navegador, no una instancia viva del paquete ni una herramienta multiproveedor. El destino etiqueta el fixture como evidencia de la versión anterior 2.13.2; la evidencia actual 2.13.4 es el informe separado del paquete exacto enlazado arriba. El fixture contiene 12 productos ficticios y permite cambiar tolerancia a errores, sinónimos, facetas de stock/categoría y reglas pin/boost/hide; después muestra una traza simulada y una interacción de añadir al carrito. No conecta ninguna tienda y no demuestra latencia ni comportamiento en tu catálogo.
 
 [Abrir nuestra demo exclusiva de NP Search](https://neuroplugin.com/es/prestashop-search-module?utm_source=github&utm_medium=organic-repo&utm_campaign=search-14d-launch&utm_content=es-evaluation-kit#search-decision-lab)
 
