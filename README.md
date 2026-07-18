@@ -31,11 +31,15 @@ Official references:
 - [PrestaShop 9 search index command](https://devdocs.prestashop-project.org/9/development/components/console/prestashop-search-index/)
 - [Browsing the front office — PrestaShop 8](https://docs.prestashop-project.org/v.8-documentation/user-guide/browsing-front-office)
 
-## Worked example
+## Worked examples
 
-The first completed example is a single controlled run against native PrestaShop 8.2.7 search: 15 pass, 1 partial, 0 fail, and 2 not applicable. Its decision is `inconclusive`, because no candidate search change existed to roll back. The partial result records a combination-reference query that opened the default combination rather than the queried one.
+The native baseline is a single controlled run against PrestaShop 8.2.7 search: 15 pass, 1 partial, 0 fail, and 2 not applicable. Its decision is `inconclusive`, because no candidate search change existed to roll back. The partial result records a combination-reference query that opened the default combination rather than the queried one.
 
 [Read the PrestaShop 8.2.7 native-search baseline](examples/prestashop-8.2.7-native/REPORT.md)
+
+The second example applies the same checklist to the exact commercial NP Search 2.13.4 ZIP on the same primary platform: 17 pass, 0 partial, 0 fail, and 1 not applicable. All four hard gates passed. This is maintainer-run product evidence with the package hash and limitations disclosed, not an independent merchant case study.
+
+[Read the NP Search 2.13.4 / PrestaShop 8.2.7 evaluation](examples/np-search-2.13.4-ps8.2.7/REPORT.md)
 
 ## Minimum fixture
 
@@ -53,7 +57,7 @@ Include at least:
 
 ## Vendor demo: NP Search only
 
-This link opens our own NP Search 2.13.2 product demo, not a multi-vendor decision tool. The browser-only fixture contains 12 fictional products and lets you change typo recovery, synonyms, stock/category facets, and pin/boost/hide rules, then inspect a simulated decision trace and add-to-cart interaction. It connects to no shop and proves neither latency nor behaviour on your catalogue.
+This link opens our own NP Search 2.13.4 product demo, not a multi-vendor decision tool. The browser-only fixture contains 12 fictional products and lets you change typo recovery, synonyms, stock/category facets, and pin/boost/hide rules, then inspect a simulated decision trace and add-to-cart interaction. It connects to no shop and proves neither latency nor behaviour on your catalogue.
 
 [Open our NP Search-only demo fixture](https://neuroplugin.com/prestashop-search-module?utm_source=github&utm_medium=organic-repo&utm_campaign=search-14d-launch&utm_content=en-evaluation-kit#search-decision-lab)
 
@@ -61,7 +65,7 @@ Always repeat the protocol on the exact shop, theme, catalogue, infrastructure, 
 
 ## Disclosure
 
-This kit does not treat any vendor as the default answer. The published native-search example is a baseline, not comparative proof for or against NP Search or any other product.
+This kit does not treat any vendor as the default answer. The native-search example is a baseline. The NP Search example is a disclosed maintainer run against one exact package, not independent comparative proof or a universal compatibility claim.
 
 ## License
 

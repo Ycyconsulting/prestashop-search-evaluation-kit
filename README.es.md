@@ -31,11 +31,15 @@ Referencias oficiales:
 - [Comando de índice de búsqueda — PrestaShop 9](https://devdocs.prestashop-project.org/9/development/components/console/prestashop-search-index/)
 - [Recorrer el front office — PrestaShop 8](https://docs.prestashop-project.org/v.8-documentation/user-guide/browsing-front-office)
 
-## Ejemplo ejecutado
+## Ejemplos ejecutados
 
-El primer ejemplo completo es una ejecución controlada contra la búsqueda nativa de PrestaShop 8.2.7: 15 `pass`, 1 `partial`, 0 `fail` y 2 `not_applicable`. La decisión es `inconclusive` porque no había un cambio candidato que pudiera revertirse. El resultado parcial documenta una referencia de combinación que abrió la combinación predeterminada en vez de la consultada.
+El baseline nativo es una ejecución controlada contra la búsqueda de PrestaShop 8.2.7: 15 `pass`, 1 `partial`, 0 `fail` y 2 `not_applicable`. La decisión es `inconclusive` porque no había un cambio candidato que pudiera revertirse. El resultado parcial documenta una referencia de combinación que abrió la combinación predeterminada en vez de la consultada.
 
 [Leer el baseline de búsqueda nativa de PrestaShop 8.2.7 (en inglés)](examples/prestashop-8.2.7-native/REPORT.md)
+
+El segundo ejemplo aplica la misma lista al ZIP comercial exacto de NP Search 2.13.4 en la misma plataforma principal: 17 `pass`, 0 `partial`, 0 `fail` y 1 `not_applicable`. Los cuatro bloqueos obligatorios pasan. Es evidencia del producto ejecutada por el mantenedor, con hash y limitaciones publicados; no es un caso independiente de un comercio.
+
+[Leer la evaluación de NP Search 2.13.4 / PrestaShop 8.2.7 (en inglés)](examples/np-search-2.13.4-ps8.2.7/REPORT.md)
 
 ## Fixture mínimo
 
@@ -53,7 +57,7 @@ Incluye al menos:
 
 ## Demo de proveedor: solo NP Search
 
-Este enlace abre nuestra propia demo de NP Search 2.13.2, no una herramienta multiproveedor. El fixture funciona solo en el navegador, contiene 12 productos ficticios y permite cambiar tolerancia a errores, sinónimos, facetas de stock/categoría y reglas pin/boost/hide; después muestra una traza simulada y una interacción de añadir al carrito. No conecta ninguna tienda y no demuestra latencia ni comportamiento en tu catálogo.
+Este enlace abre nuestra propia demo de NP Search 2.13.4, no una herramienta multiproveedor. El fixture funciona solo en el navegador, contiene 12 productos ficticios y permite cambiar tolerancia a errores, sinónimos, facetas de stock/categoría y reglas pin/boost/hide; después muestra una traza simulada y una interacción de añadir al carrito. No conecta ninguna tienda y no demuestra latencia ni comportamiento en tu catálogo.
 
 [Abrir nuestra demo exclusiva de NP Search](https://neuroplugin.com/es/prestashop-search-module?utm_source=github&utm_medium=organic-repo&utm_campaign=search-14d-launch&utm_content=es-evaluation-kit#search-decision-lab)
 
@@ -61,7 +65,7 @@ Repite siempre el protocolo en la tienda, tema, catálogo, infraestructura y bus
 
 ## Transparencia
 
-El kit no presupone que un proveedor sea la respuesta correcta. El ejemplo publicado de búsqueda nativa es un baseline, no una prueba comparativa a favor o en contra de NP Search ni de otro producto.
+El kit no presupone que un proveedor sea la respuesta correcta. El ejemplo nativo es un baseline. El ejemplo de NP Search es una prueba declarada del mantenedor sobre un paquete exacto, no evidencia comparativa independiente ni una afirmación de compatibilidad universal.
 
 ## Licencia
 
